@@ -1,7 +1,6 @@
 package org.hla.mowitnow.mower_app.models;
 
 import lombok.Builder;
-import lombok.Data;
 
 /**
  * @author lach_hamza
