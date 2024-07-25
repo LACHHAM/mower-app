@@ -5,6 +5,9 @@ import org.hla.mowitnow.mower_app.models.Direction;
 import org.hla.mowitnow.mower_app.models.Lawn;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author lach_hamza
+ */
 @Service
 public class CoordinateService {
 
