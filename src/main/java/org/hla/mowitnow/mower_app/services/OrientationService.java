@@ -5,6 +5,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * @author lach_hamza
+ */
 @Service
 public class OrientationService {
     private static final int CIRCLE_DEGREE = 360;
