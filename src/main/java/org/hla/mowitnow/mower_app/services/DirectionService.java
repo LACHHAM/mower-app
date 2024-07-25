@@ -1,7 +1,6 @@
 package org.hla.mowitnow.mower_app.services;
 
 import org.hla.mowitnow.mower_app.models.Direction;
-import org.hla.mowitnow.mower_app.models.Orientation;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -13,7 +12,7 @@ import java.util.stream.Collectors;
 public class DirectionService {
     /**
      *
-     * @param angle
+     * @param angle l'angle de la direction
      * @return la direction de la tandeuse selon la valeur de l'angle
      */
     public Optional<Direction> getDirectionByAngle(int angle) {
@@ -24,7 +23,7 @@ public class DirectionService {
 
     /**
      *
-     * @param orientation
+     * @param orientation l'orientation de la direction
      * @return la direction de la tandeuse selon la valeur de l'orientation
      */
     public Optional<Direction> getDirectionByOrientation(String orientation) {

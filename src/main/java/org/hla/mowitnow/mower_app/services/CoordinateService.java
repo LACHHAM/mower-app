@@ -10,9 +10,9 @@ public class CoordinateService {
 
     /**
      *
-     * @param currentCoordinate
-     * @param direction
-     * @param lawn
+     * @param currentCoordinate les cordonnées de la tandeuse avant le mouvement
+     * @param direction la direction de la tandeuse apres le mouvement
+     * @param lawn la pelouse
      * modifier les cordonnées de la tandeuse selon sa direction et les dimensions du pelouse
      */
     public void nextCoordinate(Coordinate currentCoordinate, Direction direction, Lawn lawn) {
