@@ -109,20 +109,20 @@ public class MowerRunningJobConfig {
 
     @Bean
     public ItemWriter<Object> writer() {
-        return items -> items.forEach(item -> processItem(item, mowerService));
+        return items -> items.forEach(this::processItem);
     }
 
-    private void processItem(Object item, MowerService mowerService) {
+    private void processItem(Object item) {
         if (item instanceof Mower mower) {
             mowerService.setMower(mower);
         } else if (item instanceof Lawn lawn) {
             mowerService.setLawn(lawn);
         } else if (item instanceof List<?> instructions) {
-            executeInstructions((List<String>) instructions, mowerService);
+            executeInstructions((List<String>) instructions);
         }
     }
 
-    private void executeInstructions(List<String> instructions, MowerService mowerService) {
+    private void executeInstructions(List<String> instructions) {
         mowerService.execute(instructions);
         printMowerFinalPosition(mowerService.getMower());
     }
